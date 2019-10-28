@@ -8,7 +8,10 @@ Welcome to the competitive_programming_with_stl wiki! If you want to contribute 
     
     
     
-    Then before uploading any file make sure you write the following thing on the top of your code /* Program Name Written by: Your Name Date: today_date Time: today_time*/
+    Then before uploading any file make sure you write the following thing on the top of your code 
+    /* Program Name 
+    Written by: Your Name 
+    Date: today_date Time: today_time*/
     
     
     
