@@ -34,6 +34,7 @@ int main()
 			ll Source,Des,Weight;
 			cin>>Source>>Des>>Weight;
 			graph[Source].push_back({Des,Weight});//Making the Adjacency List
+			//for undirected graph push two time
 		}
 	    multiset<relaxedVal_node_Pair>DijsktraHeap;
 	    DijsktraHeap.insert({0,1});  //Asumming the statring node is 1
@@ -64,7 +65,7 @@ int main()
     	ll final_des;
     	cin>>final_des;
     	cout<<dis[final_des]<<endl;
-    	
+
 	}
 	
 }
