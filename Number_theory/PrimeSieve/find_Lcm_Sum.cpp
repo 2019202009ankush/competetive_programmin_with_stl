@@ -21,7 +21,7 @@ int prime(int n)
 		}
 	}
 	long sum=0;
-	for(int i=2;i<=n;i++)
+	for(int i=1;i<=n;i++)
 	{
 		if(n%i==0)
 		sum+=primeArray[i]*i;
@@ -34,6 +34,7 @@ int main()
 	cin>>n;
 	long ans=prime(n);
 	ans+=1;
-	cout<<(n/2)*ans<<endl;
+	ans*=n;
+	cout<<ans/2<<endl;
 
 }
