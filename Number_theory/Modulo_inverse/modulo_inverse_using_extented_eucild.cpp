@@ -26,6 +26,7 @@ int main()
 	ll a,m,x,y;
 	cin>>a>>m;
 	ll gcd_=gcd(a,m,&x,&y);
+	cout<<gcd_<<" "<<x<<" "<<y<<endl;
 	if(gcd_==1)
 	{
 		cout<<(x%m +m )%m<<endl;
