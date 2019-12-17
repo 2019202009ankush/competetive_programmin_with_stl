@@ -2,7 +2,7 @@
    Written By: Ankush Mitra
    Date:11.12.19 Time:00:43*/
    // S and T - input strings
-   // You need to check if string T is present in S or no
+   // You need to check if string T is present in S or not
    #include<bits/stdc++.h>
    using namespace std;
    vector<int> LPS(char T[])
