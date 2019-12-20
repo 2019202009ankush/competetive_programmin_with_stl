@@ -26,9 +26,9 @@ int main()
 	cin>>no_of_test_case;
 	while(no_of_test_case--)
 	{
-		void init();
 		ll no_of_node,no_of_edges;
 		cin>>no_of_node>>no_of_edges;
+		init();
 		for(ll i=0;i<no_of_edges;i++)
 		{
 			ll Source,Des,Weight;
@@ -42,7 +42,7 @@ int main()
 	    while(!DijsktraHeap.empty())
 	    {
 	    	Des_Weight_Pair tem=*DijsktraHeap.begin();
-	    	DijsktraHeap.erase(DijsktraHeap.begin());
+	    	DijsktraHeap.erase(DijsktraHeap.begin());// O(log n) as set tree reorders 
 	    	
 	    	ll tem_node=tem.second;
 	    	if(vis[tem_node]==1)
@@ -55,7 +55,7 @@ int main()
 	    		ll w=new_node_pair.second;
 	    		if(dis[new_node]>dis[tem_node]+w)
 	    		{
-	    			dis[new_node]=dis[new_node]+w;
+	    			dis[new_node]=dis[tem_node]+w;
 	    			DijsktraHeap.insert({dis[new_node],new_node});
 	    		}
                 
