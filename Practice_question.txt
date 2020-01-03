@@ -1,0 +1,57 @@
+Must do coding question
+Easy :
+1 Two Sum
+7 Reverse Integer
+8 Palindrome number
+20 Valid Paranthesis
+21 Merge two sorted list
+26 Remove duplicates from sorted array
+27 Remove element
+53 Maximum Subarray
+67 Add binary
+111 Minimum depth of binary tree
+112 Path sum
+118 Pascal's triangle
+121 Best time to buy and sell stocks
+172 Factorial Trailing zeros
+189 Rotate Array
+236 LCA of a binary tree
+237 Delete node in a LL
+242 Valid Anagram
+268 Missing number
+605 Can place flowers
+994 Rotting oranges
+
+Medium:
+3 Longest substring without repeating characters
+5 LPS
+6 ZigZag
+11 Container with most water
+15 3 sum
+17 Letter Combinations of a Phone Number
+19 Remove Nth Node From End of List
+54 Spiral Matrix
+55 Jump game
+75 Sort colors
+98 Valid BST
+105 Construct Binary Tree from Preorder and Inorder Traversal
+106 Construct Binary Tree from Inorder and Postorder Traversal
+109 Convert Sorted List to Binary Search Tree
+129 Sum to root numbers
+213 House robber 2
+215 Kth largest element in an array
+225 Implement stack using queues
+238 Product of an array except self
+300 LIS
+
+Hard:
+23 Merge k sorted list
+25 Reverse nodes in k-group
+32 Longest valide parentheses
+42 Trapping Rain water
+72 Edit distance
+84 Largest rectangle in histogram
+135 Candy
+239 Sliding window maximum
+403 Frog Jump
+1001 Grid illumination
