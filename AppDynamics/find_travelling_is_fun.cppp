@@ -1,0 +1,70 @@
+/*FInd if there is a path from city one to city another two city is connected if there gcd is > g
+  Wriiten BY:ANKush Mitra
+  Date:5.1.20 Time:14.31*/
+  #include <cmath>
+  #include <cstdio>
+  #include <vector>
+  #include <iostream>
+  #include <algorithm>
+  #include<bits/stdc++.h>
+  using namespace std;
+
+  typedef long long int ll;
+  int p[200009];
+  int fin(int x)
+  {
+      if(p[x]==-1)
+            return x;
+      else return fin(p[x]);
+  }
+  void uni(int x,int y)
+  {
+      int px=fin(x);
+      int py=fin(y);
+      if(px!=py)
+      {
+          p[px]=py;
+      }
+  }
+  int main() {
+      /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+      memset(p,-1,sizeof(p));
+      ll n,g,c,d;
+      cin>>n>>g;
+      cin>>c;
+      vector<int> source;
+
+      while(c--)
+      {
+          int temp;
+          cin>>temp;
+          source.push_back(temp);
+
+      }
+      unordered_set<int>s(source.begin(),source.end());
+      cin>>d;
+      vector<int> dest;
+      while(d--)
+      {
+          int temp;
+          cin>>temp;
+          dest.push_back(temp);
+      }
+      for(int i=g+1;i<=n;i++)
+      {
+
+          for(int j=2*i;j<=n;j+=i)
+          {
+              uni(j,i);
+          }
+      }
+      for(int i=0;i<source.size();i++)
+      {
+          if(fin(source[i])==fin(dest[i]))
+               cout<<"1"<<endl;
+          else
+              cout<<"0"<<endl;
+      }
+
+      return 0;
+  }
