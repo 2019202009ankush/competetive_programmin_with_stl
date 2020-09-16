@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 int seg[4000000];
 void build(int* arr,int l,int r,int tree)
